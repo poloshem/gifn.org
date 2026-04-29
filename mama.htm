@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mama Grace's Story - Global Intercessors Family Network</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:'Comic Sans MS', 'Comic Sans', cursive;background:#f8f5ee;color:#1b1b1b;font-size:16px;}
+    a {text-decoration:none;color:inherit;}
+
+    .container {width:90%;max-width:1200px;margin:auto;}
+
+    header {
+      background:#0b4c8c;
+      padding:15px 0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .nav {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:relative;
+    }
+
+    .menu-toggle {
+      display:none;
+      font-size:2rem;
+      color:white;
+      cursor:pointer;
+    }
+
+    .logo {
+      height:80px;
+      width:auto;
+      border-radius:4px;
+    }
+
+    .nav-links {
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    .nav-links a {
+      color:white;
+      font-weight:bold;
+    }
+
+    .nav-links a:hover {
+      color:#f4b400;
+    }
+
+    .dropdown {
+      position:relative;
+    }
+
+    .dropdown-toggle {
+      color:white;
+      font-weight:bold;
+    }
+
+    .dropdown-toggle:hover {
+      color:#f4b400;
+    }
+
+    .dropdown-menu {
+      position:absolute;
+      top:100%;
+      left:0;
+      background:rgba(255,255,255,0.95);
+      min-width:220px;
+      list-style:none;
+      padding:10px 0;
+      display:none;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      border-radius:6px;
+      z-index:1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .dropdown-menu li {
+      padding:10px 20px;
+    }
+
+    .dropdown-menu li a {
+      color:#0b4c8c;
+      display:block;
+    }
+
+    .dropdown-menu li:hover {
+      background:#f8f5ee;
+    }
+
+    .dropdown.active .dropdown-menu {
+      display:block;
+    }
+
+    .donate-btn {
+      background:#f4b400;
+      color:#000;
+      padding:12px 24px;
+      border-radius:6px;
+      font-weight:bold;
+      transition: all 0.3s ease;
+    }
+
+    section {padding:70px 0;}
+
+    h2 {
+      text-align:center;
+      margin-bottom:40px;
+      color:#0b4c8c;
+      font-size:2.2rem;
+      font-family:'Playfair Display',serif;
+    }
+
+    .story-hero {
+      background:#fff;
+      padding:60px 0;
+      margin-top:40px;
+    }
+
+    .story-image {
+      width:100%;
+      max-width:600px;
+      margin:0 auto;
+      display:block;
+      border-radius:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom:40px;
+    }
+
+    .story-content {
+      max-width:800px;
+      margin:0 auto;
+      line-height:1.8;
+    }
+
+    .story-content h3 {
+      font-family:'Playfair Display',serif;
+      font-size:1.8rem;
+      color:#0b4c8c;
+      margin-bottom:20px;
+    }
+
+    .story-content p {
+      margin-bottom:20px;
+    }
+
+    .quote {
+      font-style:italic;
+      border-left:4px solid #0b4c8c;
+      padding-left:20px;
+      margin:30px 0;
+      color:#555;
+    }
+
+    footer {
+      background:#111;
+      color:white;
+      padding:40px 0;
+      text-align:center;
+    }
+
+    @media(max-width:768px){
+      .nav {
+        flex-wrap:wrap;
+      }
+
+      .menu-toggle {
+        display:block;
+      }
+
+      .nav-links {
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#08396a;
+        margin-top:15px;
+        padding:20px;
+        border-radius:8px;
+      }
+
+      .nav-links.active {
+        display:flex;
+      }
+
+      .dropdown-menu {
+        position:static;
+        box-shadow:none;
+        margin-top:10px;
+      }
+
+      .donate-btn {
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="images/logo.jpg" alt="GIFN Logo" class="logo" />
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+     <ul class="nav-links">
+       <li><a href="index.htm">Home</a></li>
+       <li><a href="aboutus.htm">About Us</a></li>
+       <li class="dropdown">
+         <a href="#programs" class="dropdown-toggle">Programs</a>
+         <ul class="dropdown-menu">
+           <li><a href="#shelter">Shelter Construction</a></li>
+           <li><a href="#environment">Environmental Conservation</a></li>
+           <li><a href="#youth">Youth Empowerment</a></li>
+         </ul>
+       </li>
+       <li><a href="#getinvolved">Get Involved</a></li>
+       <li><a href="stories.htm">Stories &amp; Impacts</a></li>
+       <li><a href="#events">Events</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+
+    <a href="#" class="donate-btn">Donate Now</a>
+  </div>
+</header>
+
+<section class="story-hero">
+  <div class="container">
+    <h2 style="text-align:center; color:#0b4c8c;">Mama Grace's Story</h2>
+    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=900" alt="Mama Grace" class="story-image">
+    
+    <div class="story-content">
+      <h3>A New Home & Hope</h3>
+      
+      <p><strong>Before GIFN intervened, Mama Grace was living in a dilapidated mud hut with her three grandchildren. The roof leaked during rainy seasons, and the walls were cracked, putting her family at risk of collapse. At 72 years old, she had lost her husband and two children, leaving her to care for her orphaned grandchildren alone.</strong></p>
+
+      <p>"I never thought I would see a proper house in my lifetime," Mama Grace recalls. "Every time it rained, we had to move to the neighbor's house. We slept on wet mats and our belongings would get soaked."</p>
+
+      <div class="quote">
+        "GIFN didn't just build us a house; they built us a future. Now my grandchildren can study in a safe environment, and I no longer worry about the rains."
+      </div>
+
+      <p><strong>The Transformation</strong></p>
+      <p>In early 2025, GIFN's shelter construction program identified Mama Grace's family as a priority case. Within three months, a new two-room brick house with an iron sheet roof was completed. The house features proper ventilation, a secure door, and windows that let in natural light.</p>
+
+      <p>The new home has transformed more than just their living conditions. Her grandchildren, who had beenmissing school due to poor health from damp conditions, are now attending regularly. Mama Grace has also been enrolled in GIFN's elderly support program, receiving monthly food supplies and healthcare check-ups.</p>
+
+      <h3>Community Impact</h3>
+      <p>Mama Grace's story has inspired others in her village. She now serves as a community advocate, helping identify other vulnerable families who need assistance. "I am a living testimony of what GIFN can do," she says proudly.</p>
+
+      <p>Her story embodies GIFN's mission: to restore dignity and hope, one life at a time. Through the generosity of donors and dedicated volunteers, families like Mama Grace's are given not just shelter, but a renewed sense of hope and possibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 style="color:white; margin-bottom:30px;">Help Transform More Lives Like Mama Grace's</h2>
+    <div class="btn-group" style="justify-content:center;">
+      <a href="index.htm#getinvolved" class="btn secondary">Get Involved</a>
+      <a href="#" class="btn primary">Donate Now</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <h3>Contact Information</h3>
+    <p>Email: info@gifn.org</p>
+    <p>Phone: +254 xxx xxx xxx</p>
+    <p>Oyugis, Kenya</p>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        navLinks.classList.remove('active');
+      }
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+    }
+  });
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        toggle.parentElement.classList.toggle('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
