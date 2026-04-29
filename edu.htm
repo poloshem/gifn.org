@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David's Journey - Global Intercessors Family Network</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:'Comic Sans MS', 'Comic Sans', cursive;background:#f8f5ee;color:#1b1b1b;font-size:16px;}
+    a {text-decoration:none;color:inherit;}
+
+    .container {width:90%;max-width:1200px;margin:auto;}
+
+    header {
+      background:#0b4c8c;
+      padding:15px 0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .nav {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:relative;
+    }
+
+    .menu-toggle {
+      display:none;
+      font-size:2rem;
+      color:white;
+      cursor:pointer;
+    }
+
+    .logo {
+      height:80px;
+      width:auto;
+      border-radius:4px;
+    }
+
+    .nav-links {
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    .nav-links a {
+      color:white;
+      font-weight:bold;
+    }
+
+    .nav-links a:hover {
+      color:#f4b400;
+    }
+
+    .dropdown {
+      position:relative;
+    }
+
+    .dropdown-toggle {
+      color:white;
+      font-weight:bold;
+    }
+
+    .dropdown-toggle:hover {
+      color:#f4b400;
+    }
+
+    .dropdown-menu {
+      position:absolute;
+      top:100%;
+      left:0;
+      background:rgba(255,255,255,0.95);
+      min-width:220px;
+      list-style:none;
+      padding:10px 0;
+      display:none;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      border-radius:6px;
+      z-index:1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .dropdown-menu li {
+      padding:10px 20px;
+    }
+
+    .dropdown-menu li a {
+      color:#0b4c8c;
+      display:block;
+    }
+
+    .dropdown-menu li:hover {
+      background:#f8f5ee;
+    }
+
+    .dropdown.active .dropdown-menu {
+      display:block;
+    }
+
+    .donate-btn {
+      background:#f4b400;
+      color:#000;
+      padding:12px 24px;
+      border-radius:6px;
+      font-weight:bold;
+      transition: all 0.3s ease;
+    }
+
+    section {padding:70px 0;}
+
+    h2 {
+      text-align:center;
+      margin-bottom:40px;
+      color:#0b4c8c;
+      font-size:2.2rem;
+      font-family:'Playfair Display',serif;
+    }
+
+    .story-hero {
+      background:#fff;
+      padding:60px 0;
+      margin-top:40px;
+    }
+
+    .story-image {
+      width:100%;
+      max-width:600px;
+      margin:0 auto;
+      display:block;
+      border-radius:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom:40px;
+    }
+
+    .story-content {
+      max-width:800px;
+      margin:0 auto;
+      line-height:1.8;
+    }
+
+    .story-content h3 {
+      font-family:'Playfair Display',serif;
+      font-size:1.8rem;
+      color:#0b4c8c;
+      margin-bottom:20px;
+    }
+
+    .story-content p {
+      margin-bottom:20px;
+    }
+
+    .quote {
+      font-style:italic;
+      border-left:4px solid #0b4c8c;
+      padding-left:20px;
+      margin:30px 0;
+      color:#555;
+    }
+
+    footer {
+      background:#111;
+      color:white;
+      padding:40px 0;
+      text-align:center;
+    }
+
+    @media(max-width:768px){
+      .nav {
+        flex-wrap:wrap;
+      }
+
+      .menu-toggle {
+        display:block;
+      }
+
+      .nav-links {
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#08396a;
+        margin-top:15px;
+        padding:20px;
+        border-radius:8px;
+      }
+
+      .nav-links.active {
+        display:flex;
+      }
+
+      .dropdown-menu {
+        position:static;
+        box-shadow:none;
+        margin-top:10px;
+      }
+
+      .donate-btn {
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="images/logo.jpg" alt="GIFN Logo" class="logo" />
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+     <ul class="nav-links">
+       <li><a href="index.htm">Home</a></li>
+       <li><a href="aboutus.htm">About Us</a></li>
+       <li class="dropdown">
+         <a href="#programs" class="dropdown-toggle">Programs</a>
+         <ul class="dropdown-menu">
+           <li><a href="#shelter">Shelter Construction</a></li>
+           <li><a href="#environment">Environmental Conservation</a></li>
+           <li><a href="#youth">Youth Empowerment</a></li>
+         </ul>
+       </li>
+       <li><a href="#getinvolved">Get Involved</a></li>
+       <li><a href="stories.htm">Stories &amp; Impacts</a></li>
+       <li><a href="#events">Events</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+
+    <a href="#" class="donate-btn">Donate Now</a>
+  </div>
+</header>
+
+<section class="story-hero">
+  <div class="container">
+    <h2 style="text-align:center; color:#0b4c8c;">David's Journey</h2>
+    <img src="images/edu.png" alt="David's story from school to street" class="story-image">
+    
+    <div class="story-content">
+      <h3>From School to Street</h3>
+      
+      <p><strong>David was a bright 14-year-old boy from a small village in rural Kenya. He walked five kilometers every morning to attend the local primary school, where he consistently topped his class. His dream was to become a teacher and give back to his community. He loved mathematics and spent his evenings doing homework by the light of a kerosene lamp.</strong></p>
+
+      <p>"I used to carry my books in a plastic bag," David recalls. "But I didn't mind. I knew education was my only way out of poverty." His mother, a subsistence farmer, sacrificed everything to keep him in school, even skipping meals to pay his uniform and book fees.</p>
+
+      <div class="quote">
+        "I never thought I would be picking scraps from a dustbin. The last thing I remember is the school bell ringing for the last time."
+      </div>
+
+      <p><strong>The Unraveling</strong></p>
+      <p>Everything changed when his mother fell critically ill with malaria. Without money for treatment, she passed away within a week. David, now an orphan, was forced to leave school. His father had abandoned the family years earlier, and there were no relatives willing or able to take him in.</p>
+
+      <p>With no home and no support, David wandered the streets of Oyugis for days. He slept under market stalls and begged for food. In time, he fell in with a group of older boys who introduced him to sniffing glue to numb the pain. "I just wanted to forget," he says, his voice breaking. "I wanted to forget my mother's face, the classroom, everything."</p>
+
+      <p>For two years, David lived on the streets. He was arrested twice for roaming at night. He watched other children go to school each morning, his heart aching with each passing school bus. "They looked so happy," he says. "I wanted that life again."</p>
+
+      <h3>The Turning Point</h3>
+      <p>In early 2025, GIFN's youth outreach team found David sleeping outside a shop. They approached him with kindness, offering food and a listening ear. At first, he was suspicious. "People on the street don't just give help," he thought. But the team, led by social workers from Life Spring Dominion Church International, persisted.</p>
+
+      <p>They took David to their rehabilitation center, where he received counseling, medical care, and food. For the first time in years, he slept in a proper bed. "I cried the first night," he admits. "I forgot how soft a mattress could be."</p>
+
+      <p>Through GIFN's youth empowerment program, David has been enrolled in vocational training. He now learns carpentry skills three days a week and attends remedial classes to catch up on his education. "I may not go back to being a teacher," he says, "but I can build things. I can create a life for myself."</p>
+
+      <h3>A Second Chance at Life</h3>
+      <p>David's story is a stark reminder of how quickly life can change for vulnerable children in rural Kenya. Without intervention, countless children like him fall through the cracks, their potential lost to circumstance.</p>
+
+      <p>Today, David is 16 — still young, still healing. He has dreams again. "I want to build houses for people like me," he says with newfound determination. "People who have nowhere to go. I want to give them a roof, just like GIFN gave me hope."</p>
+
+      <p>His story embodies why GIFN's work matters. Education isn't just about passing exams — it's about survival. But when tragedy strikes, organizations like GIFN provide the safety net that catches children before they fall into the abyss.</p>
+
+      <p style="font-style:italic; color:#666; margin-top:40px;"><em>David's story continues to unfold. With your support, more children like him can find their way back from the streets to a brighter future.</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 style="color:white; margin-bottom:30px;">Help Transform More Lives Like David's</h2>
+    <div class="btn-group" style="justify-content:center;">
+      <a href="index.htm#getinvolved" class="btn secondary">Get Involved</a>
+      <a href="#" class="btn primary">Donate Now</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <h3>Contact Information</h3>
+    <p>Email: info@gifn.org</p>
+    <p>Phone: +254 xxx xxx xxx</p>
+    <p>Oyugis, Kenya</p>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        navLinks.classList.remove('active');
+      }
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+    }
+  });
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        toggle.parentElement.classList.toggle('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
