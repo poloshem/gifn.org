@@ -31,7 +31,17 @@
     .dropdown.active .dropdown-menu {display:block;}
      .donate-btn {background:#f4b400;color:#000;padding:12px 24px;border-radius:6px;font-weight:bold;transition: all 0.3s ease;}
      .donate-btn:hover {background:linear-gradient(180deg, #e0a800 0%, #d49a00 100%);color:#000;transform:translateY(-2px);box-shadow: 0 6px 0 #8a6e00, 0 10px 20px rgba(0,0,0,0.25);}
-     .hero {min-height:60vh;background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/shelter.png') center/cover;display:flex;align-items:center;color:white;padding:60px 0;margin-top:80px;}
+     .hero-content h1 {
+      font-family:'Playfair Display',serif;
+      font-size:4rem;
+      max-width:700px;
+      margin-bottom:20px;
+    }
+     .hero-content p {
+      font-size:1.3rem;
+      margin-bottom:30px;
+    }
+      .hero {min-height:70vh;background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/banner.png') center/cover;display:flex;align-items:center;color:white;padding:60px 0;}
     section {padding:70px 0;}
     h2 {text-align:center;margin-bottom:40px;color:#0b4c8c;font-size:2.2rem;font-family:'Playfair Display',serif;}
     .content-box {background:white;padding:60px 0;}
@@ -73,8 +83,13 @@
   </div>
 </header>
 <section class="hero">
-  <div class="container">
-    <h1 style="font-family:'Playfair Display',serif; font-size:2.2rem; color:white; text-align:center;">Shelter Construction</h1>
+  <div class="container hero-content">
+    <h1>Shelter Construction</h1>
+    <p>Building homes and restoring hope</p>
+    <div class="btn-group">
+      <a href="index.htm" class="btn primary">Home</a>
+      <a href="volunter.htm" class="btn secondary">Get Involved</a>
+    </div>
   </div>
 </section>
 <section class="content-box">
