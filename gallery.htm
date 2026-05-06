@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Global Intercessors Family Network</title>
+  <title>Gallery - Global Intercessors Family Network</title>
   <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,7 @@
     body {font-family:'Comic Sans MS', 'Comic Sans', cursive;font-size:16px;background:#f8f5ee;color:#1b1b1b;}
     p { text-align: justify; }
     a {text-decoration:none;color:inherit;}
-
     .container {width:90%;max-width:1200px;margin:auto;}
-
     header {
       background:#0b4c8c;
       padding:15px 0;
@@ -127,67 +125,14 @@
 
     .hero-content h1 {
       font-family:'Playfair Display',serif;
-      font-size:2.2rem;
+      font-size:4rem;
       max-width:700px;
       margin-bottom:20px;
     }
 
-    section {padding:70px 0;}
-
-    h2 {
-      text-align:center;
-      margin-bottom:40px;
-      color:#0b4c8c;
-      font-size:2.2rem;
-      font-family:'Playfair Display',serif;
-    }
-
-    .about-hero {
-      background:#fff;
-      padding:60px 0;
-      margin-top:40px;
-    }
-
-    .mission-section {
-      background:white;
-      padding:60px 0;
-    }
-
-    .mission-box {
-      background:white;
-      padding:40px;
-      border-radius:10px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
-      margin-top:30px;
-    }
-
-    .mission-box h3 {
-      font-family:'Playfair Display',serif;
-      font-size:2.2rem;
-      margin-bottom:20px;
-      color:#0b4c8c;
-    }
-
-    .mission-section ul {
-      list-style:none;
-      padding:0;
-    }
-
-    .mission-section li {
-      padding:12px 0;
-      border-bottom:1px solid #eee;
-      line-height:1.6;
-    }
-
-    .mission-section li:last-child {
-      border-bottom:none;
-    }
-
-    .cta-section {
-      background:#0b4c8c;
-      color:white;
-      text-align:center;
-      padding:60px 0;
+    .hero-content p {
+      font-size:1.3rem;
+      margin-bottom:30px;
     }
 
     .btn-group {
@@ -221,13 +166,148 @@
     }
 
     .primary:hover {
+      background:linear-gradient(180deg, #1a6ab4 0%, #0b4c8c 100%);
       transform:translateY(-2px);
       box-shadow: 0 6px 0 #062a4d, 0 10px 20px rgba(0,0,0,0.3);
     }
 
     .secondary:hover {
+      background:linear-gradient(180deg, #ffc426 0%, #f4b400 100%);
       transform:translateY(-2px);
       box-shadow: 0 6px 0 #b8860b, 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    section {padding:70px 0;}
+
+    h2 {
+      text-align:center;
+      margin-bottom:40px;
+      color:#0b4c8c;
+      font-size:2.2rem;
+      font-family:'Playfair Display',serif;
+    }
+
+    .about-box {
+      display:grid;
+      grid-template-columns:1fr 2fr;
+      gap:20px;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .about-box img {
+      width:100%;
+      border-radius:8px;
+      object-fit:cover;
+    }
+
+    .program-grid,
+    .story-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card {
+      padding:25px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      cursor:pointer;
+      border:none;
+      font-weight:bold;
+      font-size:1.1rem;
+      color:white;
+      box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 6px 8px rgba(0,0,0,0.15);
+    }
+
+     .card.shelter {
+       background:linear-gradient(180deg, #3a7bd5 0%, #0d4a9e 100%);
+       box-shadow: 0 4px 0 #082a5c, 0 6px 12px rgba(0,0,0,0.2);
+     }
+
+     .card.story-card {
+       color:#0b4c8c;
+       box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 6px 8px rgba(0,0,0,0.15);
+     }
+
+     .card.story-card h3 {
+       color:#0b4c8c;
+     }
+
+     .card.story-card p {
+       color:#0b4c8c;
+     }
+
+    .card.food {
+      background:linear-gradient(180deg, #7ec8e3 0%, #4a90c2 100%);
+      box-shadow: 0 4px 0 #2a6a9e, 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .card.education {
+      background:linear-gradient(180deg, #ffa726 0%, #ff9800 100%);
+      box-shadow: 0 4px 0 #b86b00, 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .card.healthcare {
+      background:linear-gradient(180deg, #66bb6a 0%, #43a047 100%);
+      box-shadow: 0 4px 0 #2e7d32, 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+     .card.shelter:hover {
+       background:linear-gradient(180deg, #3a7bd5 0%, #0d4a9e 100%);
+       transform:translateY(-2px);
+       box-shadow: 0 6px 0 #082a5c, 0 10px 20px rgba(0,0,0,0.3);
+     }
+
+     .card.story-card:hover {
+       transform:translateY(-2px);
+       box-shadow: 0 6px 0 rgba(0,0,0,0.2), 0 10px 20px rgba(0,0,0,0.3);
+     }
+
+    .card.food:hover {
+      background:linear-gradient(180deg, #7ec8e3 0%, #4a90c2 100%);
+      transform:translateY(-2px);
+      box-shadow: 0 6px 0 #2a6a9e, 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card.education:hover {
+      background:linear-gradient(180deg, #ffa726 0%, #ff9800 100%);
+      transform:translateY(-2px);
+      box-shadow: 0 6px 0 #b86b00, 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card.healthcare:hover {
+      background:linear-gradient(180deg, #66bb6a 0%, #43a047 100%);
+      transform:translateY(-2px);
+      box-shadow: 0 6px 0 #2e7d32, 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .story-card img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    .event-box {
+      background:white;
+      padding:25px;
+      border-left:6px solid #0b4c8c;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .cta {
+      background:#0b4c8c;
+      color:white;
+      text-align:center;
+    }
+
+    .cta .btn {
+      box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 6px 8px rgba(0,0,0,0.15);
     }
 
     footer {
@@ -237,7 +317,42 @@
       text-align:center;
     }
 
+    .donate-btn:hover {
+      background:linear-gradient(180deg, #e0a800 0%, #d49a00 100%);
+      color:#000;
+      transform:translateY(-2px);
+      box-shadow: 0 6px 0 #8a6e00, 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .gallery-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery-grid img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform:scale(1.05);
+    }
+
     @media(max-width:768px){
+      .hero {
+        min-height:70vh;
+        height:auto;
+        padding:60px 0;
+      }
+
+      .hero-content h1 {
+        font-size:2.2rem;
+      }
+
       .nav {
         flex-wrap:wrap;
       }
@@ -272,6 +387,10 @@
         margin-top:15px;
       }
 
+      .about-box {
+        grid-template-columns:1fr;
+      }
+
       .btn-group {
         flex-direction:column;
       }
@@ -279,114 +398,40 @@
   </style>
 </head>
 <body>
-
 <header>
   <div class="container nav">
     <img src="images/logo.jpg" alt="GIFN Logo" class="logo" />
     <div class="menu-toggle" id="menuToggle">&#9776;</div>
-
-      <ul class="nav-links">
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="aboutus.htm">About Us</a></li>
-         <li class="dropdown">
-           <a href="index.htm#programs" class="dropdown-toggle">Programs</a>
-          <ul class="dropdown-menu">
+     <ul class="nav-links">
+       <li><a href="index.htm">Home</a></li>
+       <li><a href="aboutus.htm">About Us</a></li>
+        <li class="dropdown"><a href="index.htm#programs" class="dropdown-toggle">Programs</a>
+         <ul class="dropdown-menu">
            <li><a href="index.htm#shelter">Shelter Construction</a></li>
            <li><a href="index.htm#environment">Environmental Conservation</a></li>
            <li><a href="index.htm#youth">Youth Empowerment</a></li>
-          </ul>
-        </li>
-        <li><a href="volunter.htm">Get Involved</a></li>
-        <li><a href="index.htm#stories">Stories &amp; Impacts</a></li>
+         </ul>
+       </li>
+       <li><a href="volunter.htm">Get Involved</a></li>
+        <li><a href="index.htm#stories">Stories & Impacts</a></li>
         <li><a href="index.htm#events">Events</a></li>
         <li><a href="gallery.htm">Gallery</a></li>
        <li><a href="#contact">Contact</a></li>
-      </ul>
-
+     </ul>
     <a href="payment.htm" class="donate-btn">Donate Now</a>
   </div>
 </header>
-
-<section class="hero">
-  <div class="container hero-content">
-    <h1>About Us</h1>
-    <p>Learn more about our mission and vision</p>
-    <div class="btn-group">
-      <a href="index.htm" class="btn primary">Home</a>
-      <a href="volunter.htm" class="btn secondary">Get Involved</a>
+<section class="gallery">
+  <div class="container">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/david.png" alt="Team Member David" />
+      <img src="images/founder.png" alt="Founder" />
+      <img src="images/mam.png" alt="Community Member" />
+      <img src="images/banner.png" alt="Banner Image" />
     </div>
   </div>
 </section>
-
-<section class="about-hero">
-  <div class="container">
-    <h1 style="font-family:'Playfair Display',serif; font-size:2.2rem; margin-bottom:30px; color:#0b4c8c; text-align:left;">About Us</h1>
-    <p style="line-height:1.8; max-width:800px;">
-      Global Intercessors Family Network (GIFN) is a faith-driven humanitarian organization dedicated to providing shelter, support, and spiritual care for the homeless, widows, orphans, and vulnerable communities.
-    </p>
-    <p style="line-height:1.8; max-width:800px; margin-top:20px;">
-      Founded under the leadership of Apostle Bishop George Odero Ogacho, GIFN operates in partnership with Life Spring Dominion Church International, blending Christian ministry with practical outreach.
-    </p>
-  </div>
-</section>
-
-<section class="mission-section">
-  <div class="container">
-    <h2 style="font-size:2.2rem; color:#0b4c8c; margin-bottom:40px;">Our Mission</h2>
-    <div class="mission-box">
-      <ul style="font-size:1.1rem; line-height:1.8; margin-left:20px;">
-        <li>To restore dignity and hope to the homeless.</li>
-        <li>To provide safe housing, food, clothing, and healthcare.</li>
-        <li>To offer spiritual guidance through prayer, counseling, and revival missions.</li>
-        <li>To empower communities with faith and practical support.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="mission-section">
-  <div class="container">
-    <h2 style="font-size:2.2rem; color:#0b4c8c; margin-bottom:40px;">Connection to Life Spring Dominion Church International</h2>
-    <div class="mission-box">
-      <p style="line-height:1.8; font-size:1.1rem;">
-        GIFN is rooted in the vision of Life Spring Dominion Church International, led by Bishop George Odero Ogacho.
-      </p>
-      <p style="line-height:1.8; font-size:1.1rem; margin-top:15px;">
-        The church emphasizes:
-      </p>
-      <ul style="margin-top:20px; margin-left:30px; line-height:1.8; font-size:1.1rem;">
-        <li>Intercessory prayer gatherings.</li>
-        <li>Deliverance and pastoral counseling.</li>
-        <li>Community outreach missions across rural Kenya.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="mission-section">
-  <div class="container">
-    <h2 style="font-size:2.2rem; color:#0b4c8c; margin-bottom:40px;">What We Do</h2>
-    <div class="mission-box">
-      <ul style="font-size:1.1rem; line-height:1.8; margin-left:20px;">
-        <li><strong>Shelter Construction:</strong> Building durable homes for widows, orphans, and the elderly.</li>
-        <li><strong>Basic Needs Support:</strong> Supplying meals, clothing, hygiene items, and school support.</li>
-        <li><strong>Spiritual Care:</strong> Revival missions, counseling, and intercessory prayer.</li>
-        <li><strong>Community Empowerment:</strong> Encouraging independence and dignity through faith.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="container">
-    <h2 style="color:white; margin-bottom:30px;">Get Involved Today</h2>
-    <div class="btn-group" style="justify-content:center;">
-      <a href="#" class="btn secondary">Volunteer</a>
-      <a href="#" class="btn primary">Donate</a>
-    </div>
-  </div>
-</section>
-
 <footer id="contact">
   <div class="container">
     <h3>Contact Information</h3>
@@ -395,7 +440,6 @@
     <p>Oyugis, Kenya</p>
   </div>
 </footer>
-
 <script>
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.querySelector('.nav-links');
@@ -440,6 +484,5 @@
     }
   });
 </script>
-
 </body>
 </html>
