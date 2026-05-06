@@ -338,6 +338,18 @@
       transition: transform 0.3s ease;
     }
 
+    .gallery-grid figure {
+      margin:0;
+      text-align:center;
+    }
+
+    .gallery-grid figcaption {
+      margin-top:10px;
+      font-size:0.9rem;
+      color:#0b4c8c;
+      font-weight:bold;
+    }
+
     .gallery-grid img:hover {
       transform:scale(1.05);
     }
@@ -389,13 +401,17 @@
       font-weight:bold;
       font-size:20px;
       transition:0.6s ease;
-      border-radius:0 3px 3px 0;
       user-select:none;
       -webkit-user-select:none;
     }
 
+    .prev {
+      left:10px;
+      border-radius:0 3px 3px 0;
+    }
+
     .next {
-      right:0;
+      right:10px;
       border-radius:3px 0 0 3px;
     }
 
@@ -487,16 +503,46 @@
   <div class="container">
     <h2>Our Gallery</h2>
     <div class="gallery-grid">
-      <img src="images/david.png" alt="Team Member David" data-index="0" />
-      <img src="images/founder.png" alt="Founder" data-index="1" />
-      <img src="images/mam.png" alt="Community Member" data-index="2" />
-      <img src="images/banner.png" alt="Banner Image" data-index="3" />
-      <img src="images/pwd1.jpeg" alt="PWD Support Image 1" data-index="4" />
-      <img src="images/pwd2.jpeg" alt="PWD Support Image 2" data-index="5" />
-      <img src="images/pwd3.jpeg" alt="PWD Support Image 3" data-index="6" />
-      <img src="images/pwd4.jpeg" alt="PWD Support Image 4" data-index="7" />
-      <img src="images/pwd5.jpeg" alt="PWD Support Image 5" data-index="8" />
-      <img src="images/pwd6.jpeg" alt="PWD Support Image 6" data-index="9" />
+      <figure>
+        <img src="images/david.png" alt="Team Member David" data-index="0" />
+        <figcaption>Team Member David</figcaption>
+      </figure>
+      <figure>
+        <img src="images/founder.png" alt="Founder" data-index="1" />
+        <figcaption>Founder</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mam.png" alt="Community Member" data-index="2" />
+        <figcaption>Community Member</figcaption>
+      </figure>
+      <figure>
+        <img src="images/banner.png" alt="Banner Image" data-index="3" />
+        <figcaption>Event Banner</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd1.jpeg" alt="PWD Support Image 1" data-index="4" />
+        <figcaption>PWD Support Activity 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd2.jpeg" alt="PWD Support Image 2" data-index="5" />
+        <figcaption>PWD Support Activity 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd3.jpeg" alt="PWD Support Image 3" data-index="6" />
+        <figcaption>PWD Support Activity 3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd4.jpeg" alt="PWD Support Image 4" data-index="7" />
+        <figcaption>PWD Support Activity 4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd5.jpeg" alt="PWD Support Image 5" data-index="8" />
+        <figcaption>PWD Support Activity 5</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pwd6.jpeg" alt="PWD Support Image 6" data-index="9" />
+        <figcaption>PWD Support Activity 6</figcaption>
+      </figure>
     </div>
   </div>
 </section>
