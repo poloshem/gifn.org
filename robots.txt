@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gifn.org/sitemap.xml
+Sitemap: https://poloshem.github.io/gifn.org/sitemap.xml
