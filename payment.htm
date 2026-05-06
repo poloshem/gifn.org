@@ -379,6 +379,231 @@
         flex-direction:column;
       }
     }
+
+    .payment-section {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #FFA500;
+    }
+
+    .payment-section h2 {
+      color: #0b4c8c;
+      font-size: 2em;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .payment-section h2 .icon {
+      font-size: 1.2em;
+    }
+
+    .bank-details {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .bank-logo {
+      flex-shrink: 0;
+    }
+
+    .bank-logo img {
+      width: 120px;
+      height: auto;
+    }
+
+    .detail-row {
+      display: flex;
+      padding: 18px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .detail-label {
+      font-weight: bold;
+      color: #333;
+      width: 220px;
+      font-size: 1.1em;
+    }
+
+    .detail-value {
+      color: #0b4c8c;
+      font-size: 1.1em;
+      flex: 1;
+      font-weight: bold;
+    }
+
+    .detail-value.account-number {
+      font-size: 1.4em;
+      color: #f4b400;
+    }
+
+    .mpesa-section {
+      background: linear-gradient(135deg, #0b4c8c 0%, #062a4d 100%);
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .mpesa-section h2 {
+      color: white;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .mpesa-section > p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .mpesa-logo {
+      margin-bottom: 20px;
+    }
+
+    .mpesa-logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .mpesa-info {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .mpesa-detail {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 1.1em;
+    }
+
+    .mpesa-detail:last-child {
+      border-bottom: none;
+    }
+
+    .mpesa-detail-label {
+      font-weight: bold;
+      color: #87CEEB;
+    }
+
+    .mpesa-detail-value {
+      font-weight: bold;
+    }
+
+    .mpesa-detail-value.highlight {
+      font-size: 1.4em;
+      color: #f4b400;
+    }
+
+    .instructions {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+      color: #333;
+    }
+
+    .instructions h3 {
+      color: #0b4c8c;
+      margin-bottom: 20px;
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+    .instructions ol {
+      padding-left: 25px;
+      line-height: 2.2;
+      font-size: 1.1em;
+    }
+
+    .instructions li {
+      margin-bottom: 8px;
+    }
+
+    .instructions strong {
+      color: #f4b400;
+    }
+
+    .note-section {
+      text-align: center;
+      padding: 30px;
+      background: #f9f9f9;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    .note-section p {
+      color: #666;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .note-section span {
+      color: #0b4c8c;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 40px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #555;
+    }
+
+    @media (max-width: 768px) {
+      .detail-row {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .detail-label {
+        width: 100%;
+      }
+
+      .mpesa-detail {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+      }
+
+      .payment-section, .mpesa-section {
+        padding: 25px;
+      }
+
+      .container {
+        padding: 20px 15px;
+      }
+    }
   </style>
 </head>
 
@@ -409,8 +634,8 @@
 
 <section class="hero">
   <div class="container hero-content">
-    <h1>Global Intercessors Family Network</h1>
-    <p>Empowering communities, transforming lives</p>
+    <h1>Make a Donation</h1>
+    <p>Your generous contributions help us empower communities and transform lives in Kenya.</p>
     <div class="btn-group">
       <a href="index.htm" class="btn primary">Home</a>
       <a href="volunter.htm" class="btn secondary">Get Involved</a>
@@ -418,10 +643,7 @@
   </div>
 </section>
 
-<div class="page-title-section">
-    <h1>Give & Donate</h1>
-    <p>Thank you for your generous support of our humanitarian programs. Your contributions help us serve and empower communities in need.</p>
-</div>
+
 
 <div class="container">
         <!-- Bank Transfer Section -->
